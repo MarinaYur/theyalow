@@ -1,56 +1,86 @@
 @font-face {
-  font-family: 'Segoe WP';
-  src: url('assets/fonts/SegoeWP.eot');
-  src: url('assets/fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/SegoeWP.woff2') format('woff2'),
-  url('assets/fonts/SegoeWP.woff') format('woff'),
-  url('assets/fonts/SegoeWP.ttf') format('truetype');
+  font-family: "Segoe WP";
+  src: url("assets/fonts/SegoeWP.eot");
+  src: url("assets/fonts/SegoeWP.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/SegoeWP.woff2") format("woff2"),
+  url("assets/fonts/SegoeWP.woff") format("woff"),
+  url("assets/fonts/SegoeWP.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
  @font-face {
-  font-family: 'Lucida Sans';
-  src: url('assets/fonts/LucidaSans.eot');
-  src: url('assets/fonts/LucidaSans.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/LucidaSans.woff2') format('woff2'),
-  url('assets/fonts/LucidaSans.woff') format('woff'),
-  url('assets/fonts/LucidaSans.ttf') format('truetype');
+  font-family: "Lucida Sans";
+  src: url("assets/fonts/LucidaSans.eot");
+  src: url("assets/fonts/LucidaSans.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/LucidaSans.woff2") format("woff2"),
+  url("assets/fonts/LucidaSans.woff") format("woff"),
+  url("assets/fonts/LucidaSans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Asap';
-  src: url('assets/fonts/Asap-Regular.eot');
-  src: url('assets/fonts/Asap-Regular.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/Asap-Regular.woff2') format('woff2'),
-  url('assets/fonts/Asap-Regular.woff') format('woff'),
-  url('assets/fonts/Asap-Regular.ttf') format('truetype');
+  font-family: "Asap";
+  src: url("assets/fonts/Asap-Regular.eot");
+  src: url("assets/fonts/Asap-Regular.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/Asap-Regular.woff2") format("woff2"),
+  url("assets/fonts/Asap-Regular.woff") format("woff"),
+  url("assets/fonts/Asap-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('assets/fonts/SegoeUI.eot');
-  src: url('assets/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/SegoeUI.woff2') format('woff2'),
-  url('assets/fonts/SegoeUI.woff') format('woff'),
-  url('assets/fonts/SegoeUI.ttf') format('truetype');
+  font-family: "Segoe UI";
+  src: url("assets/fonts/SegoeUI.eot");
+  src: url("assets/fonts/SegoeUI.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/SegoeUI.woff2") format("woff2"),
+  url("assets/fonts/SegoeUI.woff") format("woff"),
+  url("assets/fonts/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), local("OpenSans"),
+  url("assets/fonts/open-sans/opensans.woff2") format("woff2"),
+  url("assets/fonts/open-sans/opensans.woff") format("woff"),
+  url("assets/fonts/open-sans/opensans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/ptsans/PTSans-Regular.eot");
+  src: url("assets/fonts/ptsans/PTSans-Regular.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/ptsans/PTSans-Regular.woff2") format("woff2"),
+  url("assets/fonts/ptsans/PTSans-Regular.woff") format("woff"),
+  url("assets/fonts/ptsans/PTSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("assets/fonts/ptsans/PTSans-Narrow.eot");
+  src: url("assets/fonts/ptsans/PTSans-Narrow.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/ptsans/PTSans-Narrow.woff2") format("woff2"),
+  url("assets/fonts/ptsans/PTSans-Narrow.woff") format("woff"),
+  url("assets/fonts/ptsans/PTSans-Narrow.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 #container {
-  height: 100%;
-  width: 100%;
-  max-width: 1300px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-header {
+.header {
   height: 564px;
   background-image: url("assets/images/background-header.png");
   background-size: cover;
@@ -60,7 +90,7 @@ header {
   font-size: 41px;
   letter-spacing: 0px;
   color: #ffffff;
-  font-family: "Lucida Sans", serif;
+  font-family: "Lucida Sans", sans-serif;
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
@@ -70,16 +100,15 @@ header {
 
 .navbar {
   width:453px;
-   height: 41px;
-   margin: 70px 140px 0 0;
-   float: right;
-
+  height: 41px;
+  margin: 70px 140px 0 0;
+  float: right;
 }
 
 .navbar ul {
   display: flex;
   background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-  box-shadow: -8px -8px rgba(185, 164, 53, 0.3), -4px -4px rgba(185, 164, 53, 0.6);
+  box-shadow: -8px -8px rgba(185, 164, 53, 0.27), -4px -4px rgba(185, 164, 53, 0.27);
   justify-content: space-between;
 }
 
@@ -100,17 +129,16 @@ header {
   font-size: 17px;
   letter-spacing: 0px;
   color: #9b7d08;
-  font-family: "Segoe WP", serif;
+  font-family: "Segoe WP", sans-serif;
   text-align: center;
   text-decoration: none;
   align-items: center;
   justify-content: center;
-
 }
 
 .div_h1 {
   display: block;
-  font-family: "Asap", serif;
+  font-family: "Asap", sans-serif;
   font-size: 63px;
   width: 409px;
   float: left;
@@ -142,25 +170,27 @@ h1 p {
   margin-top: -400px;
 }
 
-.slider video {
+.slider-video {
   position: absolute;
   margin-left: 143px;
-  width: 550;
-  height: 325;
+  height: 325px;
+  width: 550px;
+  object-fit: none;
+  object-position: -153px 0px;
 }
 
 .arrow-left, .arrow-right {
   position: absolute;
   margin-top: 125px;
-  cursor: pointer;
 }
 
 .arrow-right {
   margin-left: 1267px;
 }
 
-table {
+table.icons {
   border-collapse: collapse;
+  margin-left: 140px;
 }
 
 table td {
@@ -184,32 +214,200 @@ td p {
   font-size: 27px;
   letter-spacing: 0px;
   color: #000000;
-  font-family: "Segoe UI", serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 300;
   text-align: center;
   margin-top: 10px;
 }
 
-.div_main2 {
+.section1 {
   height: 506px;
   background-image: url("assets/images/background-news.png");
+  background-size: 100%;
 }
 
-.div_main3 {
+.headen {
+  margin: 40px 0px 0px 140px;
+  position: absolute;
+}
+
+.headen p {
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.window1 {
+  background-color: #ec9e03;
+  height: 235px;
+  width: 335px;
+  position: absolute;
+  margin: 110px 0px 0px 140px;
+}
+
+.wind1 {
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+  height: 235px;
+  width: 335px;
+  margin:  21px 0px 0px 32px;
+}
+
+.video-container2 {
+  margin: 110px 0px 0px 441px;
+  position: absolute;
+}
+
+.window2 {
+  background-color: #ec9e03;
+  height: 235px;
+  width: 335px;
+  position: absolute;
+  margin: 110px 0px 0px 822px;
+}
+
+.twitter {
+  margin: 54px 95px;
+}
+
+.plus {
+  position: absolute;
+  width: 694px;
+  display: flex;
+  justify-content: space-between;
+  margin: 318px 0 0 449px;
+  cursor: pointer;
+}
+
+.plus img:hover {
+  transform: scale(1.5);
+}
+
+.date {
+  background-color: #ddb101;
+  height: 82px;
+  width: 111px;
+  position: absolute;
+  margin: 345px 0px 0px 140px;
+  text-transform: uppercase;
+}
+
+.day {
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  margin: 11px 0px 0px 25px;
+}
+
+.month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe UI", sans-serif;
+  position: absolute;
+  margin: 47px 0px 0px 28px;
+}
+
+.div-main3 {
   height: 492px;
-  background-image: url("assets/images/main3.png")
+  background-image: url("assets/images/main3.png");
 }
 
-#footer {
+.phrase {
+  text-transform: uppercase;
+  width: 918px;
+  height: 60px;
+  font-size: 43px;
+  letter-spacing: 0px;
+  color: #f5c506;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 0 0 140px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.circle {
+  position: absolute;
+  margin: 7px 0px 0px 114px;
+  z-index: 5;
+}
+
+#in-circle {
+  position: absolute;
+  font-size: 19px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  margin: 52px 0px 0px 10px;
+  text-transform: uppercase;
+}
+
+.pictures {
+  margin: 52px 0px 0px 140px;
+  float: left;
+}
+
+.pictures img {
+  padding: 0px 26px 0px 0px;
+}
+
+.computer {
+  opacity: 0.57;
+}
+
+.tablet {
+  margin-bottom: 39px;
+  opacity: 0.47;
+}
+
+.phone {
+  margin-bottom: 40px;
+  opacity: 0.57;
+}
+
+.list {
+  float: right;
+  margin: 81px 48px 0px 0px;
+}
+
+.list ul li {
+  width: 352px;
+  height: 45px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  list-style-image: url("assets/images/list.png");
+}
+
+
+footer {
   height: 66px;
-  background-color: grey;
+  background-color: #4c4c4c;
+  background-size: 100%;
+  box-shadow: 0px -4px 14px 0px rgba(0, 0, 0, 0.8);
+
 }
 
 .footer-logo {
   font-size: 29px;
   letter-spacing: 0px;
   color: #ffffff;
-  font-family: "Lucida Sans", serif;
+  font-family: "Lucida Sans", sans-serif;
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
@@ -223,3 +421,67 @@ td p {
   align-items: center;
 }
 
+@media screen and (max-width:640px){
+  #container {
+    width: 1020px;
+  }
+
+  .div_h1 {
+    display: none;
+  }
+
+  .slider-video {
+    position: absolute;
+    object-fit: none;
+    object-position: 0px 0px;
+    margin-left: 0px;
+  }
+
+  .arrow-left, .arrow-right {
+    display: none;
+  }
+
+.logo {
+  font-size: 19px;
+  box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+  width: 40px;
+  height: 39px;
+  border-radius: 6px;
+  margin: 0px 0px 0px 0px;
+}
+
+.navbar {
+  width: 457px;
+  height: 62px;
+  background-color: #f5c506;
+  margin: 0px 0px 0px 0px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px rgba(185, 164, 53, 0.27), 0px 0px rgba(185, 164, 53, 0.27);
+}
+
+.navbar ul li {
+  width: 152px;
+  height: 62px;
+}
+
+.navbar ul li a {
+  width: 151px;
+  font-size: 19px;
+}
+
+.window2 {
+  display: none;
+}
+
+.date {
+  display: none;
+}
+
+.list {
+  display: none;
+}
+}
