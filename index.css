@@ -81,12 +81,13 @@
 }
 
 .header {
-  height: 564px;
+  height: 566px;
   background-image: url("assets/images/background-header.png");
   background-size: cover;
 }
 
 .logo {
+  display: flex;
   font-size: 41px;
   letter-spacing: 0px;
   color: #ffffff;
@@ -94,8 +95,14 @@
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
-  margin: 25px 0 0 140px;
+  margin: 27px 0 0 139px;;
   float: left;
+  justify-content: center;
+  justify-items: center;
+  }
+
+  .logo p {
+  padding: 26px 0 0 3px;
   }
 
 .navbar {
@@ -115,25 +122,30 @@
 .border {
   border-left:solid grey 1px;
   border-right:solid grey 1px;
+  width: 131px;
 }
 
 .navbar ul li {
-  width: 151px;
   height: 41px;
   text-transform: uppercase;
 }
 
 .navbar ul li a {
   display: block;
-  width: 151px;
   font-size: 17px;
   letter-spacing: 0px;
   color: #9b7d08;
   font-family: "Segoe WP", sans-serif;
   text-align: center;
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
+}
+
+.ali1 {
+  width: 172px;
+}
+
+.ali3 {
+  width: 147px;
 }
 
 .div_h1 {
@@ -142,7 +154,7 @@
   font-size: 63px;
   width: 409px;
   float: left;
-  padding: 143px 0 0 280px;
+  padding: 136px 0 0 281px;
 }
 
 h1 {
@@ -151,10 +163,13 @@ h1 {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  width: 420px;
+  margin: 6px 0 0 18px;;
 }
 
 h1 p {
   color: white;
+  margin: 13px 0 0 17px;
 }
 
 .div_main1 {
@@ -163,6 +178,7 @@ h1 p {
   align-content: center;
   display: block;
   align-content: center;
+  height: 212px;
 }
 
 .slider {
@@ -172,44 +188,50 @@ h1 p {
 
 .slider-video {
   position: absolute;
-  margin-left: 143px;
   height: 325px;
   width: 550px;
   object-fit: none;
   object-position: -153px 0px;
+  margin: 1px 0 0 148px;;
 }
 
 .arrow-left, .arrow-right {
   position: absolute;
-  margin-top: 125px;
+  margin-top: 134px;;
 }
 
 .arrow-right {
   margin-left: 1267px;
 }
 
-table.icons {
-  border-collapse: collapse;
-  margin-left: 140px;
+.icons {
+  display: grid;
+  grid-template-rows: 150px 62px;
+  grid-template-columns: 339px 339px 339px;
+  height: 212px;
+  margin: 0px 0 0 18px;
+  justify-content: center;
+  justify-items: center;
 }
 
-table td {
-  vertical-align: center;
-  width: 340px;
-  text-align: center;
-  border-right: solid 1px #d4d4d4;
-  border-left: solid 1px #d4d4d4;
+.icon > div {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.tr-icons td {
-  padding-top: 45px;
+.cloud-icon {
+  padding: 58px 29px 0 0px;
 }
 
-table tr {
-  height: 105px;
+.leaf-icon {
+  padding: 34px 3px 0px 0px;
 }
 
-td p {
+.arrow-icon {
+  padding: 51px 40px 0 0;
+}
+
+.icons p {
   text-transform: uppercase;
   font-size: 27px;
   letter-spacing: 0px;
@@ -217,18 +239,22 @@ td p {
   font-family: "Segoe UI", sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-top: 10px;
+}
+
+.td-p3 {
+  margin: 8px 0 0px -18px;
 }
 
 .section1 {
-  height: 506px;
+  height: 508px;
   background-image: url("assets/images/background-news.png");
   background-size: 100%;
 }
 
 .headen {
-  margin: 40px 0px 0px 140px;
+  margin: 37px 0px 0px 141px;;
   position: absolute;
+  word-spacing: 2px;
 }
 
 .headen p {
@@ -242,9 +268,13 @@ td p {
 .window1 {
   background-color: #ec9e03;
   height: 235px;
-  width: 335px;
+  width: 341px;
   position: absolute;
   margin: 110px 0px 0px 140px;
+}
+
+.window1 p {
+  word-spacing: -2px;
 }
 
 .wind1 {
@@ -252,28 +282,38 @@ td p {
   letter-spacing: 0px;
   line-height: 38px;
   color: #ffffff;
-  font-family: "Segoe WP";
+  font-family: "Segoe WP", sans-serif;
   font-weight: 300;
   height: 235px;
-  width: 335px;
-  margin:  21px 0px 0px 32px;
+  width: 341px;
+  margin: 16px 0px 0px 28px;
 }
 
 .video-container2 {
-  margin: 110px 0px 0px 441px;
+  margin: 110px 0px 0px 446px;
   position: absolute;
 }
 
 .window2 {
   background-color: #ec9e03;
   height: 235px;
-  width: 335px;
+  width: 330px;
   position: absolute;
-  margin: 110px 0px 0px 822px;
+  margin: 110px 0px 0px 829px;
+}
+
+.number22 p{
+font-size: 25px;
+letter-spacing: 0px;
+line-height: 38px;
+color: #ffffff;
+font-family: "Segoe WP", sans-serif;
+font-weight: 300;
+margin: 9px 0 -47px 285px;
 }
 
 .twitter {
-  margin: 54px 95px;
+  margin: 58px 82px;
 }
 
 .plus {
@@ -281,7 +321,7 @@ td p {
   width: 694px;
   display: flex;
   justify-content: space-between;
-  margin: 318px 0 0 449px;
+  margin: 318px 0 0 455px;
   cursor: pointer;
 }
 
@@ -306,7 +346,7 @@ td p {
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   position: absolute;
-  margin: 11px 0px 0px 25px;
+  margin: 11px 0px 0px 28px;
 }
 
 .month {
@@ -316,11 +356,16 @@ td p {
   color: #b26529;
   font-family: "Segoe UI", sans-serif;
   position: absolute;
-  margin: 47px 0px 0px 28px;
+  margin: 47px 0px 0px 32px;
+}
+
+.sliderL {
+  position: absolute;
+  margin: 471px 0 0px 211px;
 }
 
 .div-main3 {
-  height: 492px;
+  height: 497px;
   background-image: url("assets/images/main3.png");
 }
 
@@ -333,14 +378,18 @@ td p {
   color: #f5c506;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  margin: 0 0 0 140px;
+  margin: 0 0 0 193px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 42px;
+}
+
+.phrase p {
+  word-spacing: 2px;
 }
 
 .circle {
   position: absolute;
-  margin: 7px 0px 0px 114px;
+  margin: -9px 0px 0px 137px;
   z-index: 5;
 }
 
@@ -351,17 +400,18 @@ td p {
   color: #ffffff;
   font-family: "PT Sans Narrow";
   font-weight: 700;
-  margin: 52px 0px 0px 10px;
+  margin: 52px 0px 0px 7px;
   text-transform: uppercase;
+  word-spacing: 3px;
 }
 
 .pictures {
-  margin: 52px 0px 0px 140px;
+  margin: 35px 0px 0px 158px;
   float: left;
 }
 
 .pictures img {
-  padding: 0px 26px 0px 0px;
+  padding: 0px 21px 0px 0px;
 }
 
 .computer {
@@ -380,11 +430,11 @@ td p {
 
 .list {
   float: right;
-  margin: 81px 48px 0px 0px;
+  margin: 81px 140px 0px 0px;
 }
 
 .list ul li {
-  width: 352px;
+  width: 360px;
   height: 45px;
   font-size: 22px;
   letter-spacing: 0px;
@@ -394,13 +444,39 @@ td p {
   list-style-image: url("assets/images/list.png");
 }
 
+.list li p {
+  word-spacing: 1px;
+  padding-left: 12px;
+}
+
+.list_li1 {
+  padding-bottom: 4px;
+}
+
+.list_li2 {
+  line-height: 25px;
+  padding-bottom: 22px;
+}
+
+.list_li3 {
+  padding-bottom: 5px;
+}
+
+.list_li4 {
+  line-height: 25px;
+}
 
 footer {
   height: 66px;
   background-color: #4c4c4c;
   background-size: 100%;
   box-shadow: 0px -4px 14px 0px rgba(0, 0, 0, 0.8);
+  height: 63px;
+}
 
+footer p {
+  margin: 20px 0 0 4px;
+  margin: 1px 0 0 5px;
 }
 
 .footer-logo {
@@ -413,7 +489,8 @@ footer {
   text-transform: uppercase;
   display: flex;
   justify-content: left;
-  margin: 0 0 0 140px;
+  margin: 0px 0 0 139px;
+    padding: 5px 0 0 0px;
 }
 
 .footer-logo p {
